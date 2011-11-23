@@ -1,0 +1,35 @@
+doctype 5
+html
+  head
+  meta(http-equip='Content-Type', content='text/html;charset=UTF-8')
+  title yamr group chat
+  link(type='text/css', href='/stylesheets/chat.css', rel='stylesheet', media='screen')
+  body#body
+    #online
+      #tips
+        div Create a custom room by going to <a href="/room_name">yamr.net/room_name</a>
+
+    #room(data-v='#{version}')
+
+    #chat
+      div
+        div#info type / for commands
+        //- autocomplete is off so firefox doesn't cache the form and cause it not to load on soft refresh
+        form(autocomplete='off')
+          input#idle(type='hidden')
+          input#room-name(type='hidden', value='#{room.name}')
+          span #{user.name}:
+          input#message(type='text')
+          input.hidden(type='submit')
+
+    .poof
+
+    img#spinner(src='/images/spinner.gif')
+
+    - if (user.name.substr(0, 5) != 'Guest')
+      form.headshot-form.hidden(action='/upload', method='POST', enctype='multipart/form-data', target='hiddenIframe')
+        input.headshot-file(type='file', name='headshot')
+        input.hidden(type='submit', value='add headshot')
+      iframe#hiddenIframe.hidden(name='hiddenIframe', src='about:blank')
+
+    script(src='/javascripts/all.js')

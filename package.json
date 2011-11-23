@@ -1,0 +1,12 @@
+{
+  "name": "yamr",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.5.0",
+    "connect": "1.7.2",
+    "socket.io": "0.8.5",
+    "jade": "0.16.4",
+    "mysql": "0.9.4",
+    "connect-form": "0.2.1"
+  }
+}
