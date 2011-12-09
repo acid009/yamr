@@ -500,14 +500,12 @@ window.chat = {
     else if i < 0
       i = tipCount - 1
 
-    ###
     $('span.nextTip').remove()
     $('span.prevTip').remove()
     if i < tipCount - 1
       $('#tips div').prepend '<span class="nextTip">&rarr;</span>'
     if i >= tipCount - 1
       $('#tips div').prepend '<span class="prevTip">&larr;</span>'
-    ###
 
     $('#tips div').hide()
     $('#tips div:eq(' + i + ')').fadeIn()
