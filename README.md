@@ -5,8 +5,7 @@ You can demo it by going to [yamr.net](http://yamr.net)
 
 #### Installation
 
-Yamr was built on node [v0.4.9](http://nodejs.org/dist/node-v0.4.9.tar.gz) (the version currently packaged with ubuntu
-11.10), and requires [npm](http://npmjs.org), a [mysql](http://www.mysql.com) database, [sass](http://sass-lang.com), [coffeescript](http://jashkenas.github.com/coffee-script/) and [yuicompressor-2.4.7](http://developer.yahoo.com/yui/compressor/). The rest of the dependencies can be installed after cloning the repository and running
+Yamr was built on node [v0.6.6](http://nodejs.org/dist/v0.6.6/node-v0.6.6.tar.gz), and requires [npm](http://npmjs.org), a [mysql](http://www.mysql.com) database, [sass](http://sass-lang.com), [coffeescript](http://jashkenas.github.com/coffee-script/) and [yuicompressor-2.4.7](http://developer.yahoo.com/yui/compressor/). The rest of the dependencies can be installed after cloning the repository and running
 
     npm install -d
 
