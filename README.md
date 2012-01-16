@@ -14,7 +14,7 @@ Once set up, you'll want to edit src/config.coffee and run the following
 commands (or set up a build script)
 
     coffee -o ./compiled/ -c src
-    sass --update src/public/stylesheets:compiled/public/stylesheet
+    sass --update src/public/stylesheets:compiled/public/stylesheets
     cat compiled/public/javascripts/jquery-1.6.4.min.js > compiled/public/javascripts/all.js
     java -jar yuicompressor-2.4.7.jar compiled/public/javascripts/socket.io.js >> compiled/public/javascripts/all.js
     cat compiled/public/javascripts/jquery-ui-1.8.16.custom.min.js >> compiled/public/javascripts/all.js
